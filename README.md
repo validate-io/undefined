@@ -19,15 +19,17 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var lib = require( 'validate.io-undefined' );
+var isUndefined = require( 'validate.io-undefined' );
+
+console.log( isUndefined( undefined ) );
+// Returns true
+
+console.log( isUndefined( null ) );
+// Returns false
 ```
 
 
 ## Examples
-
-``` javascript
-var lib = require( 'validate.io-undefined' );
-```
 
 To run the example code from the top-level application directory,
 
