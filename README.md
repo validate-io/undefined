@@ -16,20 +16,34 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 
 ## Usage
 
-To use the module,
+``` javascript
+var isUndefined = require( 'validate.io-undefined' );
+```
+
+#### isUndefined( value )
+
+Validates if a `value` is `undefined`.
+
+``` javascript
+var value;
+
+var bool = isUndefined( value );
+// returns true
+```
+
+
+## Examples
 
 ``` javascript
 var isUndefined = require( 'validate.io-undefined' );
 
 console.log( isUndefined( undefined ) );
-// Returns true
+// returns true
 
 console.log( isUndefined( null ) );
-// Returns false
+// returns false
 ```
 
-
-## Examples
 
 To run the example code from the top-level application directory,
 
@@ -42,7 +56,7 @@ $ node ./examples/index.js
 
 ### Unit
 
-Unit tests use the [Mocha](http://visionmedia.github.io/mocha) test framework with [Chai](http://chaijs.com) assertions. To run the tests, execute the following command in the top-level application directory:
+Unit tests use the [Mocha](http://mochajs.org) test framework with [Chai](http://chaijs.com) assertions. To run the tests, execute the following command in the top-level application directory:
 
 ``` bash
 $ make test
@@ -62,16 +76,16 @@ $ make test-cov
 Istanbul creates a `./reports/coverage` directory. To access an HTML version of the report,
 
 ``` bash
-$ open reports/coverage/lcov-report/index.html
+$ make view-cov
 ```
 
 
+---
 ## License
 
 [MIT license](http://opensource.org/licenses/MIT). 
 
 
----
 ## Copyright
 
 Copyright &copy; 2014. Athan Reines.

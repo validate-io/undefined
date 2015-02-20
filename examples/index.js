@@ -1,7 +1,9 @@
+'use strict';
+
 var isUndefined = require( './../lib' );
 
 console.log( isUndefined( undefined ) );
-// Returns true
+// returns true
 
 console.log( isUndefined( null ) );
-// Returns false
+// returns false
