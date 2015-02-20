@@ -28,7 +28,12 @@
     "validation",
     "validator",
     "undefined",
-    "void"
+    "void",
+    "is",
+    "type",
+    "check",
+    "isundefined",
+    "valid"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/undefined/issues"
